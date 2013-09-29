@@ -1,0 +1,142 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Times New Roman", serif;
+  overflow-y: scroll;
+  margin-top: 20px;
+}
+
+.container-narrow {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.masthead {
+  font-size: 60px;
+  text-align: center;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+
+.sub-masterhead{
+  font-size: 15px;
+  //line-height: 20px;
+  color: #595959;
+  display: inline-block;
+}
+
+.row {
+  //border: thin solid #ddd;
+  margin-bottom: 30px;
+}
+
+.row-1 input {
+  border: thin solid #ddd;
+  outline: none;
+  background: #fff;
+  width: 488px;
+  margin: 0;
+  padding: 5px;
+  color: #333;
+}
+.row-1 input:focus {
+  background: #dedede;
+}
+
+.comment{
+	color: #595959;
+	font-style: italic;
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+.topToolbar{
+  font: 13px/27px Arial,sans-serif;
+  position  : absolute;
+  top       : 0;
+  left      : 0;
+  right     : 0;
+  opacity   : 1;
+  height    : 29px;
+  background: #2D2D2D;
+  z-index   : 990;
+}
+
+.topToolbar .title{
+  display: inline-block;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+  right: 0;
+  position: absolute;
+}
+
+.topToolbar ul{
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+  list-style-type: none outside none;
+}
+
+.topToolbar ul li{
+  display: inline-block;
+  line-height: 27px;
+  position: relative;
+  vertical-align: top;
+}
+
+
+.topToolbar,
+.topToolbar ul,
+.topToolbar ul li{
+  margin: 0;
+}
+
+.topToolbar ul li a{
+  margin: 0;
+  color: #CCCCCC !important;
+  cursor: pointer;
+  display: block;
+  text-decoration: none !important;
+}
+
+.topToolbar ul li a:hover{
+  background: #4C4C4C;
+}
+
+.topToolbar ul li a .borderTop{
+  border-top: 2px solid transparent;
+  display: block;
+}
+
+.topToolbar ul li a.focus .borderTop{
+  border-top-color: #DD4B39 !important;
+}
+
+.topToolbar ul li a .text {
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    display: block;
+    padding: 0 5px;
+    position: relative;
+    z-index: 1000;
+}
+
+.topToolbar ul li a.focus .text{
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.rest-header div,
+.rest-return .body .return div{
+  display: inline-block;
+}
+
+.rest-row .title,
+.rest-row .body{
+  vertical-align: top;
+  display: inline-block;
+}

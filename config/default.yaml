@@ -1,0 +1,6 @@
+TinyURL:
+  title: MUs
+  dbHost: localhost
+  dbPort: 27017
+  dbName: tinyURL
+  appPort: 3000

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    <script src='javascripts/jquery.min.js'></script>
+  </head>
+  <body>
+
+  	<!-- ======================
+    JAVASCRIPT
+	====================== -->
+	<script language="Javascript" src="vendors/jquery-1.9.0.min.js"></script>
+	<script language="Javascript" src="vendors/mustache/mustache.js"></script>
+	<script language="Javascript" src="vendors/mustache/ICanHaz-no-mustache.min.js"></script>
+	<script language="Javascript" src="vendors/template_render.js"></script>
+	<script language="Javascript" src="vendors/backbone-0.9.2/underscore.min.js"></script>
+	<script language="Javascript" src="vendors/backbone-0.9.2/backbone.min.js"></script>
+
+	<script language="Javascript" src="javascripts/app.js"></script>
+	<script language="Javascript" src="javascripts/helpers.js"></script>
+	<script language="Javascript" src="javascripts/Router.js"></script>
+	<script language="Javascript" src="javascripts/models/Url.js"></script>
+	<script language="javascript" src="javascripts/views/Default.js"></script>
+	<script language="javascript" src="javascripts/views/Home.js"></script>
+	<script language="javascript" src="javascripts/views/REST.js"></script>
+	<script language="javascript" src="javascripts/views/Help.js"></script>
+
+	<script id="template_Default" type="text/html">
+	<div class="topToolbar">
+  		<ul>
+  			<li>
+  				<a href="#" class="home">
+  					<span class="borderTop"></span>
+  					<span class="text">Home</span>
+  				</a>
+  			</li>
+  			<li>
+  				<a href="#REST" class="rest">
+  					<span class="borderTop"></span>
+  					<span class="text">REST</span>
+				</a></li>
+  			<li>
+  				<a href="#help" class="help">
+  					<span class="borderTop"></span>
+  					<span class="text">Help</span>
+  				</a>
+  			</li>
+  		</ul>
+  		<div class="title">MUs</div>
+  	</div>
+  	<div class="container-narrow">
+  		
+    </div>
+	</script>
+
+	<script id="template_Home" type="text/html">
+  	<div class="masthead">MUs <div class="sub-masterhead">(Make URL shorter)</div></div>
+  	<div class="row row-1">
+	    <form method="post" action="">
+	    	<input id="url" name="url" placeholder="Type your url to shorter"/>
+	    </form>
+    </div>
+    <div class="row">
+		<p class="result hidden">Result : <b class="content"></b></p>
+    	<span class="comment"></span>
+	</div>
+  	</script>
+  	<script id="template_REST" type="text/html">
+    <div class="row">
+      <div class="rest-header">
+        <div class="type">GET</div>
+        <div class="url">http://localhost:3000/::hash::</div>
+      </div>
+      <div class="rest-row rest-return">
+        <div class="title">return</div>
+        <div class="body">
+          <div class="return">
+            <div class="code">301</div>
+          </div>
+          <div class="return">
+            <div class="code">404</div>
+          </div>
+          <div class="return">
+            <div class="code">500</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="rest-header">
+        <div class="type">POST</div>
+        <div class="url">http://localhost:3000/</div>
+      </div>
+      <div class="rest-row rest-param">
+        <div class="title">param</div>
+        <div class="body">{url:"url"}</div>
+      </div>
+      <div class="rest-row rest-return">
+        <div class="title">return</div>
+        <div class="body">
+          <div class="return">
+            <div class="code">200</div>
+          </div>
+          <div class="return">
+            <div class="code">412</div>
+            <div class="message">url param could not be null</div>
+          </div>
+          <div class="return">
+            <div class="code">500</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  	</script>
+  	<script id="template_Help" type="text/html">
+  	<p>Not yet implemented</p>
+  	</script>
+  </body>
+</html>

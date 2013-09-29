@@ -1,0 +1,22 @@
+{
+  "name": "tinyUrl",
+  "version": "0.0.1",
+  "author": {
+    "name": "BOITEAU Pierre-Emmanuel",
+    "email": "boiteaupe@gmail.com"
+  },
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "config":{
+  },
+  "dependencies": {
+    "express"     : "*",
+    "ejs"        : "*",
+    "mongodb"     : "*",
+    "config"      : "*",
+    "yaml"        : "*",
+    "mongojs"     : "*"
+  }
+}
